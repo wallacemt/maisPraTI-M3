@@ -1,4 +1,4 @@
-# 🎯Módulo 1 - Lógica de Programação com JavaScript
+# 🎯Módulo 3 - Fundamentos do Desenvolvimento Front-end
 
 Bem-vindo ao repositório do Módulo 3 do bootcamp Mais para TI! Este módulo é focado nos fundamentos do desenvolvimento front-end, abordando HTML, CSS e JavaScript. Aqui você encontrará os exercícios e projetos desenvolvidos durante esta etapa do curso.
 
