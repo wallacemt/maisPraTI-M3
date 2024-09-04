@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+ul > li {
+    color: red;
+    background-color: rgb(216, 214, 214);
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+ul > li:hover {
+    background-color: #a52a2a;
+}
+
+ul > li#lested{
+    color: green;
+    font-style: italic;
+}
