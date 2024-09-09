@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #161526;
+    padding: 20px 0;
+}
+
+#form-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #d5d952;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 16px 0px rgba(255, 255, 255, 0.658);
+    transition: 1s;
+    opacity: 50%;
+}
+#form-container:hover{
+    box-shadow: 3px 3px 16px 0px rgba(255, 255, 255, 0.315);
+    opacity: 100%;
+    transition: 1s;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: xx-large;
+    color:#161526;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+.label-form {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: aquamarine;
+    box-shadow: 1px 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.checkbox-container {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.checkbox-container a {
+    color: #96893f;
+}
+
+input[type="checkbox"] {
+    width: 45px;
+    margin-right: 0px;
+}
+
+
+button {
+    grid-column: 1 / 1;
+    padding: 10px 15px;
+    background-color: #A89AD9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #8378ac;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

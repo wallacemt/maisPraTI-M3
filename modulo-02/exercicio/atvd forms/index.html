@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div id="form-container">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <p>
+                <label class="label-form" for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome aqui" required>
+            </p>
+            <p>
+                <label class="label-form" for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+            </p>
+            <p>
+                <label class="label-form" for="phone">Telefone (Opcional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+            </p>
+            <p>
+                <label class="label-form" for="subject">Assunto:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Selecione...</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </p>
+            <p>
+                <label class="label-form" for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..."
+                    required></textarea>
+            </p>
+            <p class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Aceito os <a href=#"">Termos de Uso</a></label>
+            </p>
+            <button type="submit" id="submitBtn">Enviar</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submitBtn');
+
+            function validateForm() {
+                // Verifica se o formulário é válido
+                if (form.checkValidity()) {
+                    submitBtn.disabled = false;
+                } else {
+                    submitBtn.disabled = true;
+                }
+            }
+
+            form.addEventListener('input', validateForm);
+            form.addEventListener('change', validateForm);
+            submitBtn.disabled = true;
+        })
+    </script>
+
+</body>
+
+</html>
