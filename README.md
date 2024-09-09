@@ -16,6 +16,7 @@ Neste módulo, o objetivo principal foi aprender e aplicar conceitos fundamentai
 O repositório está organizado da seguinte forma:
 
 - **/lessons**: Contém os arquivos desenvolvidos em aula.
+- **/exercicio**: Contém exercicios que foram feitos utilizando os conceitos estudados.
 
 
 ## 📚 Conteúdos Abordados
