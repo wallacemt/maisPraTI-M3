@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h1>Cadastro de evento</h1>
+        <label for="nome">Nome Completo: </label>
+        <input type="text" name="nome" id="nome" placeholder="Seu nome aqui">
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Seu melhor e-mail">
+
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" placeholder="********">
+
+        <label for="confirme-senha">Comfirme sua senha: </label>
+        <input type="password" name="confirme-senha" id="confirme-senha" placeholder="********">
+
+        <label for="genero">Gênero</label>
+        <select name="genero" id="genero">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+            <option value="other">Outro</option>
+        </select>
+
+        <label for="data-nascimento">Data de Nascimento</label>
+        <input type="date" name="data-nascimento" id="data-nascimento" placeholder="dd/mm/aaaa">
+
+        <label for="pais">Pais</label></label>
+        <select name="pais" id="pais">
+            <option value="brasil">Brazil</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="peru">Peru</option>
+            <option value="uruguai">Uruguai</option>
+        </select>
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value="ba">Bahia</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="pe">Pernambuco</option>
+            <option value="mg">Minas Gerais</option>
+        </select>
+        <fieldset>
+            <legend>Preferencias de Comunicação</legend>
+            <input type="checkbox" name="email-novidades" id="email-novidades" value="email-novidades">
+            <label for="email-novidades" class="inl-lbl">Receber atualizações por email</label><br>
+
+            <input type="checkbox" name="sms-novidades" id="sms-novidades" value="sms-novidades">
+            <label for="sms-novidades" class="inl-lbl">Receber atualizações por SMS</label><br>
+        </fieldset>
+        <label for="foto-perfil">Foto de Perfil: </label>
+        <input type="file" name="fotos-perfil" id="fotos-perfil">
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativdade Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <form>
+        <h1>Cadastro de usuario</h1>
+
+        <label for="nome">Nome completo: </label>
+        <input type="text" name="nome  " id="nome" required>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="senha">Senha: </label></label>
+        <input type="password" name="senha" id="senha" required>
+
+        <label for="pais">Selecione Seu Pais</label>
+        <select name="pais" id="pais">
+            <option value="br">Brasil</option>
+            <option value="fr">França</option>
+            <option value="jp">Japão</option>
+            <option value="in">India</option>
+        </select>
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" name="Sexo" id="isxmas" value="M"><label for="isxmas" class="inl-lbl">Masculino</label>
+
+            <input type="radio" name="Sexo" id="isxfem" checked value="F" class="inl-lbl"> <label for="isxfem" class="inl-lbl">Feminino</label>
+        </fieldset>
+
+        <input type="checkbox" id="termos">
+        <label for="termos" class="inl-lbl">Aceitar termos de serviço</label>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>

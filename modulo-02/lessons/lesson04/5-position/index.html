@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        .container{
+            position: relative;
+            background-color: #dbdbdb;
+            width: 600px;
+            margin: 20px auto;
+            border: 2px solid;
+            top: 10px;
+            left: 30px;
+        }
+        .absolute{
+            position: absolute;
+            border: 3px solid blue;
+            top: 200px;
+            right: 20px;
+            bottom: 100px;
+        }
+
+        .fixed{
+            position: fixed;
+            border: 3px solid red;
+            top: 300px;
+            left: 10px;
+        }
+        .sticky{
+            position: sticky;
+            background-color: yellow;
+            top: 10px;
+            left: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Positon exemple</h1>
+        <p class="sticky">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum omnis officia quas dolore dignissimos repudiandae eos iste ipsum beatae aliquam?</p>
+        
+        <p class="relative">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorem dolor autem nemo id in exercitationem! Excepturi tenetur vel nam veritatis quas nemo et quo cumque repudiandae? Quaerat, incidunt doloremque?</p>
+
+        <p class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam mollitia hic perferendis ex officiis <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, in.</span> unde, explicabo veniam rerum sequi reiciendis itaque! Quibusdam, quia!</p>
+        
+        <p class="fixed" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque fugit sunt quia dolor exercitationem error officiis, id odit libero accusamus alias consequuntur quod veniam reprehenderit saepe ex suscipit praesentium! Necessitatibus quasi reiciendis soluta quae veritatis.</p>
+    </div>
+</body>
+</html>
