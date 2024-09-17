@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calc</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div id="calc">
+      <div id="operations">
+        <div id="previous"></div>
+        <div id="current-operation"><input type="text" maxlength="15" class="resultado" name="tela"  readonly></div>
+      </div>
+      <div id="buttons-container">
+        <button>CE</button>
+        <button onclick="limpar()">C</button>
+        <button onclick="deletar()">DEL</button>
+        <button onclick="inserir('/')">/</button>
+        <button class="number" onclick="inserir(7)">7</button>
+        <button class="number" onclick="inserir(8)">8</button>
+        <button class="number" onclick="inserir(9)">9</button>
+        <button onclick="inserir('*')">*</button>
+        <button class="number" onclick="inserir(4)">4</button>
+        <button class="number" onclick="inserir(5)">5</button>
+        <button class="number" onclick="inserir(6)">6</button>
+        <button onclick="inserir('-')">-</button>
+        <button class="number" onclick="inserir(1)">1</button>
+        <button class="number" onclick="inserir(2)">2</button>
+        <button class="number" onclick="inserir(3)">3</button>
+        <button onclick="inserir('+')">+</button>
+        <button class="number" onclick="inserir(0)">0</button>
+        <button class="number" onclick="inserir('.')">.</button>
+        <button id="equal-btn" onclick="calcularTotal()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

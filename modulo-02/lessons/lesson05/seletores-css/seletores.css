@@ -1,0 +1,38 @@
+div p{
+    color: blue;
+}
+
+ul > li{
+    color: red;
+}
+
+h1 + p {
+    color: green;
+}
+
+h1 ~ p {	
+    color: green;
+}
+
+a:hover{
+    color: yellow;
+}
+
+p::after{
+    content: "Seu nome"; 
+    color: red;
+}
+
+li:nth-child(2){
+    color: green;
+}
+tr:nth-child(even){
+    color: aquamarine;
+}
+
+button:not(.primary){
+    color: red;
+}
+button:active{
+    color: green;
+}
