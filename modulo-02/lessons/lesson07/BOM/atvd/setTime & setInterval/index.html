@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>setTime & setInterval</title>
+        <link rel="stylesheet" href="../buttons.css">
+
+        <script>
+            function changeText() {
+                let paragrafo = document.getElementById("paragrafo");
+                let temp = paragrafo.textContent;
+                paragrafo.innerHTML = "O texto foi alterado";
+                setTimeout(() => {
+                    let buton = document.createElement("button");
+                    buton.innerHTML = "Clique aqui";
+                    document.body.appendChild(buton);
+                    buton.onclick = () => {
+                        let cont = 10;
+                        let j = window.setInterval(() => {
+                            let contador = document.getElementById("contador");
+                            paragrafo.innerHTML = `Contador: ${cont}`;
+                            cont--;
+                            if (cont == 0) { 
+                                window.clearInterval(j);
+                                document.body.removeChild(buton);
+                                paragrafo.innerHTML = "Timer Finalizado";
+                                window.setTimeout(() => {
+                                    paragrafo.innerHTML = temp
+                                }, 2000)
+                            }
+                        }, 1000);
+                    };
+                }, 3000);
+            }
+        </script>
+    </head>
+    <body>
+        <section>
+            <h1>setTime & setInterval</h1>
+            <p id="paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas officiis dolor modi vitae magnam maiores aliquid nemo eaque autem qui. Ipsa magni nobis quisquam dignissimos corrupti, exercitationem quos repellat doloremque accusantium totam, possimus suscipit unde ipsum dolorem adipisci dicta beatae quia consequuntur. Quas ad unde necessitatibus sapiente modi quo similique!
+            </p>
+            <button onclick="changeText()">Alterar texto da Pagina</button>
+            <button onclick="history.go(1)">Avancar</button>
+            <button onclick="history.go(-1)">Voltar</button>
+        </section>
+    </body>
+</html>
