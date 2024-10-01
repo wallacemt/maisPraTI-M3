@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="./estilos/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <h1><a href="./index.html">To Do App</a></h1>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./manegetment.html">Manegetment</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Register Task</h2>
+                <form id="form">
+                    <label for="year">Ano</label>
+                    <select name="Year" id="year" required>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                    <label for="month">Mês</label>
+                    <select name="Month" id="month" required>
+                        <option value="01">Janeiro</option>
+                        <option value="02">Fevereiro</option>
+                        <option value="03">Março</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Maio</option>
+                        <option value="06">Junho</option>
+                        <option value="07">Julho</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    <label for="day">Dia</label>
+                    <input type="number" placeholder="Dia" id="day" max="31" min="1" required>
+                    <label for="type">Tipo</label>
+                    <select name="type" id="type"required>
+                        <option value="work">Trabalho</option>
+                        <option value="home">Casa</option>
+                        <option value="study">Estudo</option>
+                        <option value="other">Outros</option>
+                    </select>
+                    <label for="description">Descrição</label>
+                    <textarea name="description" id="description" placeholder="Digite uma descrição"></textarea>
+                    <input type="submit" value="Save" id="submit"/>
+                </form>
+            </div>
+        </main>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

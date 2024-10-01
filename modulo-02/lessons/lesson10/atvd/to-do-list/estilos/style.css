@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Roboto', sans-serif;
+    --color1: #020659;
+    --color2: #182E59;
+    --color3: #0C70F2;
+    --color4: #EDF257;
+    --color5: #D9CF9C;
+}
+body{
+    background-color: var(--color2);
+    height: 100vh;
+}
+
+.menu{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--color1);
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 20px;
+}
+.menu h1 > a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid black;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu ul li a{
+    margin: 0 10px; 
+    color: #fff;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: var(--color4)
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.container{
+    margin-top: 10px;
+    background-color: #020202;
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    width: 500px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px #000;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color5);
+    width: 100%;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form label{
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    color: var(--color4);
+
+}
+.container form input{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+}
+.container form input::placeholder{
+    color: #000;
+    font-size: 16px;
+}
+.container form select{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+}
+.container form textarea{
+    margin-top: 10px;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100px;
+    resize: vertical;
+}
+
+.container form textarea:focus{
+    outline: none;
+    font-size: 16px;
+}
+.container form select option{
+    color: #000;
+    font-size: 16px;
+}
+.container form input[type="submit"]{
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bolder;
+    background-color: var(--color3);
+}
+
+.container form input[type="submit"]:hover{
+    background-color: var(--color2);
+    color: #fff;
+}

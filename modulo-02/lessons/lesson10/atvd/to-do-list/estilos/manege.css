@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Roboto', sans-serif;
+    --color1: #020659;
+    --color2: #182E59;
+    --color3: #0C70F2;
+    --color4: #EDF257;
+    --color5: #D9CF9C;
+}
+body{
+    background-color: var(--color2);
+    height: 100vh;
+}
+
+.menu{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--color1);
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 20px;
+}
+.menu h1 > a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid black;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu ul li a{
+    margin: 0 10px; 
+    color: #fff;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: var(--color4)
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.container{
+    margin-top: 10px;
+    background-color: #020202;
+    color: #fff;
+    padding: 60px;
+    min-width: 700px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color5);
+    width: 100%;
+    font-weight: bolder;
+    font-size: 30px;
+}
+table{
+    width: auto;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+table th, table td{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+table td{
+    white-space: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ccc;
+}
+table th{
+    border: 1px solid #ccc;
+    background-color: var(--color1);
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.delete{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--color3);
+    cursor: pointer;
+}
+.delete:hover{
+    background-color: rgba(255, 0, 0, 0.459);
+}
