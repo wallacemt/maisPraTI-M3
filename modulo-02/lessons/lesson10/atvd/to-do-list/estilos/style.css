@@ -5,6 +5,8 @@
 }
 :root{
     font-family: 'Roboto', sans-serif;
+    --color-0: #000;
+    --color0 : #fff;
     --color1: #020659;
     --color2: #182E59;
     --color3: #0C70F2;
@@ -25,14 +27,14 @@ body{
     align-items: center;
     background-color: var(--color1);
     border-bottom: 1px solid #ccc;
-    color: #fff;
+    color: var(--color0);
     padding: 20px;
 }
 .menu h1 > a{
     padding: 0 20px;
     text-decoration: none;
-    color: #fff;
-    border-right: 1px solid black;
+    color: var(--color0);
+    border-right: 1px solid var(--color4);
 }
 .menu ul{
     display: flex;
@@ -41,7 +43,7 @@ body{
 }
 .menu ul li a{
     margin: 0 10px; 
-    color: #fff;
+    color: var(--color0);
     text-decoration: none;
 }
 .menu ul li a:hover{
@@ -57,7 +59,7 @@ main{
 .container{
     margin-top: 10px;
     background-color: #020202;
-    color: #fff;
+    color: var(--color4);
     padding: 60px;
     display: flex;
     width: 500px;
@@ -65,7 +67,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px 10px #000;
+    box-shadow: 10px 10px 10px var(--color-0);
 }
 .container h2{
     text-align: center;
@@ -98,7 +100,7 @@ main{
     border-radius: 5px;
 }
 .container form input::placeholder{
-    color: #000;
+    color: var(--color-0);
     font-size: 16px;
 }
 .container form select{
@@ -110,6 +112,7 @@ main{
 }
 .container form textarea{
     margin-top: 10px;
+    font-size: 16px;
     border: none;
     width: 250px;
     border-radius: 5px;
@@ -120,10 +123,10 @@ main{
 
 .container form textarea:focus{
     outline: none;
-    font-size: 16px;
 }
 .container form select option{
-    color: #000;
+    color: var(--color4);
+    background-color: var(--color2);
     font-size: 16px;
 }
 .container form input[type="submit"]{
@@ -131,12 +134,12 @@ main{
     cursor: pointer;
     border: none;
     padding: 10px;
-    color: #fff;
+    color: var(--color0);
     font-weight: bolder;
     background-color: var(--color3);
 }
 
 .container form input[type="submit"]:hover{
     background-color: var(--color2);
-    color: #fff;
+    color: var(--color4);
 }

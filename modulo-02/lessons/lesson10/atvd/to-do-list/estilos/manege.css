@@ -32,7 +32,7 @@ body{
     padding: 0 20px;
     text-decoration: none;
     color: #fff;
-    border-right: 1px solid black;
+    border-right: 1px solid var(--color4);
 }
 .menu ul{
     display: flex;
@@ -59,7 +59,7 @@ main{
     background-color: #020202;
     color: #fff;
     padding: 60px;
-    min-width: 700px;
+    min-width: 500px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px #000;
     display: flex;
@@ -74,6 +74,20 @@ main{
     width: 100%;
     font-weight: bolder;
     font-size: 30px;
+}
+#load{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bolder;
+    background-color: var(--color3);
+}
+#load:hover{
+    background-color: rgba(255, 187, 0, 0.459);
 }
 table{
     width: auto;
@@ -111,4 +125,27 @@ table th{
 }
 .delete:hover{
     background-color: rgba(255, 0, 0, 0.459);
+}
+
+.complete{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--color3);
+    cursor: pointer;
+}
+.complete:hover{
+    background-color: rgba(0, 128, 0, 0.459);
+}
+
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+    .complete{
+        display: none;
+    }
 }
