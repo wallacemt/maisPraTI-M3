@@ -1,5 +1,6 @@
 let meuForms = document.getElementById("form");
 let tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+
 meuForms.addEventListener("submit" , (event) => {
     event.preventDefault();
     let titulo = document.getElementById("titulo").value;

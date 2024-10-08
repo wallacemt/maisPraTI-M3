@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Endereço</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Endereço</h1>
+    </header>
+    <main>
+        <form method="get" action="#" id="form">
+            <input type="text" name="cep" id="cep" placeholder="CEP" autocomplete="off" maxlength="9" required onblur="pesquisacep(this.value)">
+            <input type="text" name="rua" id="rua" autocomplete="off" disabled placeholder="Endereço">
+            <input type="text" name="bairro" id="bairro" autocomplete="off" disabled placeholder="Bairro">
+            <input type="text" name="cidade" id="cidade" autocomplete="off" disabled placeholder="Cidade">
+            <input type="text" name="estado" id="estado" autocomplete="off" disabled placeholder="Estado">
+        </form>
+    </main>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
