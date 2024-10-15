@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #ff0000;
+}
+
+body{
+    position: relative;
+    background-image: url("../img/super_mario_odyssey_dinosaur_4k.jpeg");
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    border-bottom: 1px solid #ffffff80;
+    z-index: 20;
+}
+
+.logo img{
+    max-width: 60px;
+    min-width: 60px;
+    filter: invert(1);
+    transition: transform 0.5s ease;
+}
+
+.logo:hover img{
+    transform: rotate(540deg) scale(1.2);
+    transition: transform 0.5 ease;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    position: relative;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    border: 1px solid #ffffff80;
+    padding: 15px;
+    transition: 1s;
+}
+#login-btn{
+    padding: 10px;
+    border: 1px solid #ffffff80;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+#login-btn:hover{
+    background-color: #fff;
+    color: var(--primary);
+}
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ffffff80;
+    background-color: transparent;
+}
+.search input {
+    width: 80px;
+    border: none;
+    border-right: 1px solid #ffffff80;
+    padding: 5px;
+    background-color: transparent;
+}
+.search input::placeholder{
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.search i{
+    color: #ffffff80;
+    cursor: pointer;
+    margin-left: 10px;
+}
