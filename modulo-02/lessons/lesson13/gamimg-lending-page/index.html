@@ -6,6 +6,9 @@
     <title>Gamimg Lending Page</title>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_circle" />
+    <link rel="shortcut icon" href="../gamimg-lending-page/assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -22,11 +25,162 @@
         </nav>
         <button id="login-btn">Login</button>
         <div class="search">
-            <input type="text" name="" placeholder="Search">
+            <input type="text" name="" placeholder="Search" id="gameInput">
             <i class="fas fa-search"></i>
         </div>
     </header>
 
-    <script src="./assets/scripts/index.js"></script>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="slide-1">
+                <img src="./assets/img/super_mario_odyssey_dinosaur_4k.jpeg" alt="Banner do Super Mario Odyssey">
+
+                <div class="backscene"></div>
+
+                <div class="banner">
+                    <div class="left">
+                        <div class="features">
+                            <div class="rating">
+                                <span class="score">9.2</span>
+                                <div class="content">
+                                    <span class="subtitle">M E T A S C O R E</span>
+                                    <h4>Ótimo</h4>
+                                    <span>O classico Mario de cara nova</span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                                <a href="" target="_blank" class="buy-btn">
+                                    <span class="material-symbols-outlined" id="icon">add_circle</span>
+                                </a>
+                                <div class="content">
+                                    <span class="subtitle">Super Mario Odyssey</span>
+                                    <h4>COMPRE AGORA</h4>
+                                    <span>Plataforma, Aventura, Ação</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1>Mario</h1>
+                    </div>
+                    <img src="./assets/img/mario.png" alt="Mario">
+                    <div class="right">
+                        <ul class="description">
+                            <li>
+                                <p>27 de Outubro 2017</p>
+                            </li>
+                            <li>
+                                <h4>Modos de jogo</h4>
+                                <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+                            </li>
+                        </ul>
+
+                        <div class="trailer">
+                            <h2>Assista ao Trailer</h2>
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/5kcdRBHM7kM"
+                                title="Super Mario Odyssey Trailer" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide-2">
+                <img src="../gamimg-lending-page/assets/img/pokemon-legends-arceus.jpeg" alt="Banner do Pokemon Legends Arceus">
+                <div class="backscene"></div>
+                <div class="banner">
+                    <div class="left">
+                        <div class="features">
+                            <div class="rating">
+                                <span class="score">8.3</span>
+                                <div class="content">
+                                    <span class="subtitle">M E T A S C O R E</span>
+                                    <h4>Bom</h4>
+                                    <span>Prepare-se para uma aventura Pokemon!</span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                                <a href="" target="_blank" class="buy-btn">
+                                    <span class="material-symbols-outlined" id="icon">add_circle</span>
+                                </a>
+                                <div class="content">
+                                    <span class="subtitle">Pokemon Legends</span>
+                                    <h4>COMPRE AGORA</h4>
+                                    <span>Ação, RPG</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="pokemon-title">Pokemon</h1>
+                    </div>
+                    <img src="../gamimg-lending-page/assets/img/red.png" alt="Treinador Pokemon Red" class="pokemon">
+                    <div class="right">
+                        <ul class="description">
+                            <li>
+                                Data de Lançamento
+                                <p>28 de Janeiro</p>
+                            </li>
+                            <li>
+                                <h4>Modos de jogo</h4>
+                                <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+                            </li>
+                        </ul>
+                        <div class="trailer">
+                            <h2>Assista ao Trailer</h2>
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/I4RynqpahT8?si=zstmtfFmB3TrTh8d"
+                                title="Super Mario Odyssey Trailer" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide-3">
+                <img src="./assets/img/The-Legend-of-Zelda-Breath-of-the-Wild.jpeg" alt="Banner do Pokemon Legends Arceus">
+                <div class="backscene"></div>
+                <div class="banner">
+                    <div class="left">
+                        <div class="features">
+                            <div class="rating">
+                                <span class="score">9.7</span>
+                                <div class="content">
+                                    <span class="subtitle">M E T A S C O R E</span>
+                                    <h4>Bom</h4>
+                                    <span>Se aventure no mundo de Zelda</span>
+                                </div>
+                            </div>
+                            <div class="pricing">
+                                <a href="" target="_blank" class="buy-btn">
+                                    <span class="material-symbols-outlined" id="icon">add_circle</span>
+                                </a>
+                                <div class="content">
+                                    <span class="subtitle">Zelda Breath of the Wild</span>
+                                    <h4>COMPRE AGORA</h4>
+                                    <span>Aventura, Ação, Rpg, Outro</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="zelda-title">Zelda</h1>
+                    </div>
+                    <img src="./assets/img/link.png" alt="Personagem principal do zelda">
+                    <div class="right">
+                        <ul class="description">
+                            <li>
+                                Data de Lançamento
+                                <p>28 de Janeiro</p>
+                            </li>
+                            <li>
+                                <h4>Modos de jogo</h4>
+                                <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+                            </li>
+                        </ul>
+                        <div class="trailer">
+                            <h2>Assista ao Trailer</h2>
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/1rPxiXXxftE?si=3zOxHnku3W3yxJuF"
+                                title="Super Mario Odyssey Trailer" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
